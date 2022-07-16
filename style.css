@@ -32,6 +32,7 @@ body {
   height: 24px;
   position: relative;
   margin-right: 25px;
+  cursor: pointer;
 }
 .btn::before {
   content: "";
@@ -60,6 +61,17 @@ body {
 .nav__search::before {
   background-image: url(./img/icons/search.svg);
 }
+@media screen and (max-width:768px) {
+  .nav__phone{
+    display: none;
+  }
+  .nav__mail{
+    display: none;
+  }
+  .nav__cart{
+    margin-right: 0;
+  }
+}
 .nav__phone {
   text-decoration: none;
   color: white;
@@ -67,6 +79,11 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
+}
+@media screen and (max-width:768px) {
+  .nav__phone{
+    display: none;
+  }
 }
 .nav__point {
   margin-right: 35px;
@@ -113,14 +130,15 @@ body {
   display: flex;
   list-style: none;
   justify-content: space-between;
-
-  opacity: 0.4;
+  flex-wrap: ;
 }
 .showcase__nav-button {
+  color: #ffffff;
   border: none;
   background-color: transparent;
   padding-top: 75px;
   position: relative;
+cursor: pointer;
 }
 .showcase__nav-button::before {
   content: "";
@@ -131,6 +149,10 @@ body {
   background-repeat: no-repeat;
   top: 0;
   transform: translate(50%);
+}
+.showcase__nav-button:hover{
+  color: #FF0000;
+  
 }
 .showcase--kitchen::before {
   background-image: url(./img/showcase/Icons/Kitchen.svg);
@@ -146,4 +168,20 @@ body {
 }
 .showcase--sharpener::before {
   background-image: url(./img/showcase/Icons/sharpener.svg);
+}
+@media screen and (max-width:768px) {
+  .showcase__nav-item{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+.showcase--sharpener::before{
+  transform:translate(78%) ;
+}
+.showcase--accessories::before{
+  transform: translate(95%);
+}
 }

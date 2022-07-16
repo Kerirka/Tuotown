@@ -1,0 +1,25 @@
+@media screen and (max-width:768px) {
+    .class{
+      display: none;
+    }
+}
+@media screen and (max-width:992px) {
+    .class{
+      display: none;
+    }
+}
+@media screen and (max-width:768px) {
+    .class{
+      display: none;
+    }
+}
+@media screen and (max-width:540px) {
+    .class{
+      display: none;
+    }
+}
+@media screen and (max-width:320px) {
+    .class{
+      display: none;
+    }
+}
