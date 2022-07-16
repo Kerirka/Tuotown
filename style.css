@@ -12,6 +12,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0 0 0;
+  
 }
 .nav {
   background-color: rgba(33, 33, 33, 0.8);
@@ -77,6 +78,7 @@ body {
 }
 .hero {
   color: white;
+  
 }
 .hero__title {
   max-width: 605px;
@@ -101,4 +103,47 @@ body {
   padding: 15px 35px;
   color: white;
   text-decoration: none;
+}
+.showcase {
+  padding-top: 60px;
+  margin-bottom: 60px;
+  color: #ffffff;
+}
+.showcase__nav {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+
+  opacity: 0.4;
+}
+.showcase__nav-button {
+  border: none;
+  background-color: transparent;
+  padding-top: 75px;
+  position: relative;
+}
+.showcase__nav-button::before {
+  content: "";
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 0;
+  transform: translate(50%);
+}
+.showcase--kitchen::before {
+  background-image: url(./img/showcase/Icons/Kitchen.svg);
+}
+.showcase--folding::before {
+  background-image: url(./img/showcase/Icons/folding.svg);
+}
+.showcase--accessories::before {
+  background-repeat: no-repeat;
+  top: 0;
+  transform: translate(50%);
+  background-image: url(./img/showcase/Icons/accessories.svg);
+}
+.showcase--sharpener::before {
+  background-image: url(./img/showcase/Icons/sharpener.svg);
 }
