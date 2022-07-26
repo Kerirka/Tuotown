@@ -130,7 +130,7 @@ body {
   display: flex;
   list-style: none;
   justify-content: space-between;
-  flex-wrap: ;
+  flex-wrap: wrap;
 }
 .showcase__nav-button {
   color: #ffffff;
