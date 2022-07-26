@@ -12,7 +12,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0 0 0;
-  
 }
 .nav {
   background-color: rgba(33, 33, 33, 0.8);
@@ -61,14 +60,14 @@ body {
 .nav__search::before {
   background-image: url(./img/icons/search.svg);
 }
-@media screen and (max-width:768px) {
-  .nav__phone{
+@media screen and (max-width: 768px) {
+  .nav__phone {
     display: none;
   }
-  .nav__mail{
+  .nav__mail {
     display: none;
   }
-  .nav__cart{
+  .nav__cart {
     margin-right: 0;
   }
 }
@@ -80,8 +79,8 @@ body {
   font-size: 20px;
   line-height: 24px;
 }
-@media screen and (max-width:768px) {
-  .nav__phone{
+@media screen and (max-width: 768px) {
+  .nav__phone {
     display: none;
   }
 }
@@ -95,7 +94,6 @@ body {
 }
 .hero {
   color: white;
-  
 }
 .hero__title {
   max-width: 605px;
@@ -138,7 +136,7 @@ body {
   background-color: transparent;
   padding-top: 75px;
   position: relative;
-cursor: pointer;
+  cursor: pointer;
 }
 .showcase__nav-button::before {
   content: "";
@@ -150,9 +148,8 @@ cursor: pointer;
   top: 0;
   transform: translate(50%);
 }
-.showcase__nav-button:hover{
-  color: #FF0000;
-  
+.showcase__nav-button:hover {
+  color: #ff0000;
 }
 .showcase--kitchen::before {
   background-image: url(./img/showcase/Icons/Kitchen.svg);
@@ -169,8 +166,8 @@ cursor: pointer;
 .showcase--sharpener::before {
   background-image: url(./img/showcase/Icons/sharpener.svg);
 }
-@media screen and (max-width:768px) {
-  .showcase__nav-item{
+@media screen and (max-width: 768px) {
+  .showcase__nav-item {
     width: 50%;
     display: flex;
     justify-content: center;
@@ -178,10 +175,10 @@ cursor: pointer;
     margin-bottom: 20px;
   }
 
-.showcase--sharpener::before{
-  transform:translate(78%) ;
-}
-.showcase--accessories::before{
-  transform: translate(95%);
-}
+  .showcase--sharpener::before {
+    transform: translate(78%);
+  }
+  .showcase--accessories::before {
+    transform: translate(95%);
+  }
 }
